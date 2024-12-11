@@ -3,8 +3,48 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background                  : #ffffff;
+  --foreground                  : #171717;
+  --success-color               : #428445;
+  --success-color-rgb           : 66, 132, 69;
+  --warning-color               : #e0b252;
+  --warning-color-rgb           : 224, 178, 82;
+  --error-color                 : #EB001B;
+  --error-color-rgb             : 235, 0, 27;
+  --tooltip-background          : #383838;
+  --tooltip-color               : #fff;
+  --body-background         : #fff;
+  --text-color                  : #868686;
+  --text-color-rgb              : 134, 134, 134;
+  --heading-color               : #000000;
+  --accent-color                : #ff8421;
+  --accent-color-rgb            : 255, 132, 33;
+  --accent-color-darken         : #d35e00;
+  --accent-color-hover          : var(--accent-color-darken);
+  --secondary-color             : #000000;
+  --secondary-color-rgb         : 0, 0, 0;
+  --link-color                  : #868686;
+  --link-color-hover            : #ff8421;
+  --border-color                : #e6e6e6;
+  --border-color-rgb            : 230, 230, 230;
+  --button-background           : #000;
+  --button-color                : #fff; 
+  --button-background-hover     : #ff8421;
+  --button-color-hover          : #fff;
+
+  --btn-radius                  : 0px;
+  --btn-radius2                 : 40px;
+  --other-radius                : 0px;
+
+  --sale-badge-primary          : #e33131;
+  --sale-badge-secondary        : #fff;
+  --new-badge-primary           : #109533;
+  --new-badge-secondary         : #fff;
+  --preorder-badge-primary      : #0774d7;
+  --preorder-badge-secondary    : #fff;
+  --soldout-badge-primary       : #999999;
+  --soldout-badge-secondary     : #fff;
+  --custom-badge-primary        : #ec7501;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -15,7 +55,7 @@
 }
 
 body {
-  color: var(--foreground);
+  color: var(--sale-badge-primary);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
