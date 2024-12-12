@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 :root {
   --background                  : #ffffff;
   --foreground                  : #171717;
@@ -45,6 +44,8 @@
   --soldout-badge-primary       : #999999;
   --soldout-badge-secondary     : #fff;
   --custom-badge-primary        : #ec7501;
+
+  /* font family */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -55,7 +56,17 @@
 }
 
 body {
-  color: var(--sale-badge-primary);
+  color: var(--text-color);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
+  font-size: 14px;
+}
+@media (min-width: 750px){
+  body{
+    font-size: 1.6rem;
+  }
+}
+
+svg{
+  fill: currentColor;
 }

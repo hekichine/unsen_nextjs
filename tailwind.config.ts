@@ -24,10 +24,10 @@ export default {
         link: "var(--link-color)",
         linkHover: "var(--link-color-hover)",
         border: "var(--border-color)",
-        button: "var(--button-color)",
-        buttonBackground: "var(--button-background)",
-        buttonHover: "var(--button-color-hover)",
-        buttonBackgroundHover: "var(--button-background-hover)",
+        btn: "var(--button-color)",
+        btnbg: "var(--button-background)",
+        btnhv: "var(--button-color-hover)",
+        btnbghv: "var(--button-background-hover)",
         
         // Badge
         badgeSaleBackground: "var(--sale-badge-primary)",
@@ -38,8 +38,28 @@ export default {
         badgePreorderColor: "var(--preorder-badge-secondary)",
         badgeSoldoutBackground: "var(--soldout-badge-primary)",
         badgeSoldoutColor: "var(--soldout-badge-secondary)",
+
+        // font family
+        fontHeading: "var(--font-heading)",
+        fontBody: "var(--font-body)"
+
       },
     },
+    container: {
+      center:true,
+      padding:{
+        default: '15px',
+        lg: '30px',
+        xl: '50px',
+      },
+      screens: {
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+        "2xl": "1540px",
+      }
+    }
   },
   plugins: [],
 } satisfies Config;
